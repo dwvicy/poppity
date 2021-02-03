@@ -1,14 +1,12 @@
-import Head from 'next/head';
-import Nav from '../src/components/nav';
+import Head from 'next/head'
 
 export default function Home() {
-    return (
-        <div>
-            <Head>
-                <title>Create Next App</title>
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
-            <Nav />
-        </div>
-    );
+  return (
+    <div>
+      <Head>
+        <title>dwvicy</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+    </div>
+  )
 }
