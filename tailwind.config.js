@@ -1,44 +1,86 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-    purge: ['./pages/**/*.js', './components/**/*.js'],
-    darkMode: false, // or 'media' or 'class'
-    theme: {
-        screens: {
-            sm: '700px',
-            // => @media (min-width: 640px) { ... }
-
-            md: '800px',
-            // => @media (min-width: 768px) { ... }
-
-            lg: '1024px',
-            // => @media (min-width: 1024px) { ... }
-
-            xl: '1280px',
-            // => @media (min-width: 1280px) { ... }
-
-            '2xl': '1536px'
-            // => @media (min-width: 1536px) { ... }
+  purge: ['./src/**/*.tsx'],
+  theme: {
+    // good to know: add default line height https://tailwindcss.com/docs/font-size#app
+    extend: {
+      fontFamily: {
+        sans: ['Inter', ...defaultTheme.fontFamily.sans]
+      },
+      colors: {
+        // custom light-gray tones
+        geist: {
+          50: '#fafafa',
+          100: '#eaeaea'
         },
-        fontFamily: {
-            sans: ['Poppins', ...defaultTheme.fontFamily.sans]
-        },
-
-        extend: {
-            transitionTimingFunction: {
-                'in-expo': 'cubic-bezier(0.95, 0.05, 0.795, 0.035)',
-                'out-expo': 'cubic-bezier(0.19, 1, 0.22, 1)'
-            },
-            rotate: ['active', 'group-hover'],
-            backgroundOpacity: {
-                10: '0.1',
-                20: '0.2',
-                95: '0.95'
-            }
+        // custom dark scheme
+        dark: {
+          1100: '#212121',
+          1000: '#2B2B2B',
+          900: '#404040',
+          800: '#4D4D4D',
+          700: '#5e5e5e',
+          600: '#676767',
+          500: '#a6a6a6',
+          400: '#CFCFCF',
+          300: '#D9D9D9',
+          200: '#ebebeb',
+          100: '#FFFFFF'
         }
-    },
-    variants: {
-        extend: {}
-    },
-    plugins: []
-};
+      },
+      typography: (theme) => ({
+        default: {
+          css: {
+            color: theme('colors.gray.700'),
+            h2: {
+              fontWeight: '700',
+              letterSpacing: theme('letterSpacing.tight'),
+              color: theme('colors.gray.900')
+            },
+            h3: {
+              fontWeight: '600',
+              color: theme('colors.gray.900')
+            },
+            'ol li:before': {
+              fontWeight: '600',
+              color: theme('colors.gray.500')
+            },
+            'ul li:before': {
+              backgroundColor: theme('colors.gray.400')
+            },
+            code: {
+              color: theme('colors.gray.900')
+            },
+            a: {
+              color: theme('colors.gray.900')
+            },
+            pre: {
+              color: theme('colors.gray.200'),
+              backgroundColor: theme('colors.gray.800')
+            },
+            blockquote: {
+              color: theme('colors.gray.900'),
+              borderLeftColor: theme('colors.gray.200')
+            }
+          }
+        }
+      })
+    }
+  },
+  variants: {
+    opacity: ['responsive', 'hover', 'focus', 'disabled'],
+    cursor: ['responsive', 'hover', 'focus', 'disabled'],
+    backgroundColor: [
+      'responsive',
+      'hover',
+      'focus',
+      'active',
+      'group-hover',
+      'odd',
+      'even'
+    ]
+  },
+  // eslint-disable-next-line global-require
+  plugins: [require('@tailwindcss/typography'), require('@tailwindcss/forms')]
+}
