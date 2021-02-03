@@ -1,12 +1,12 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  purge: ['./src/**/*.tsx'],
+  purge: ['./src/**/*.js'],
   theme: {
     // good to know: add default line height https://tailwindcss.com/docs/font-size#app
     extend: {
       fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans]
+        sans: ['Poppins', ...defaultTheme.fontFamily.sans]
       },
       colors: {
         // custom light-gray tones
