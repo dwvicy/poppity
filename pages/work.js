@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 
 export default function Work() {
-    return (
-        <div>
-            <h1>Work</h1>
-        </div>
-    );
+  return (
+    <div className="flex flex-col min-h-screen">
+      <h1>Work</h1>
+    </div>
+  )
 }

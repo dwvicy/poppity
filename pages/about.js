@@ -2,10 +2,8 @@ import React from 'react'
 
 export default function About() {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <h1>About</h1>
-      <p>Hello</p>
-      <main className="flex-grow min-h-screen">Page content</main>
     </div>
   )
 }
