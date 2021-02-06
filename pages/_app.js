@@ -6,7 +6,7 @@ import Foot from '../src/components/foot';
 
 function MyApp({ Component, pageProps }) {
     return (
-        <div className="flex h-screen">
+        <div className="h-screen">
             <Nav />
             <main className="flex-1 overflow-y-auto p-5">
                 <Component {...pageProps} />
