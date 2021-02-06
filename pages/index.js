@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 export default function Home() {
     return (
-        <div className=" flex flex-col min-h-screen items-center justify-center">
+        <div className="items-center justify-center">
             <Head>
                 <title>dwvicy</title>
                 <link rel="icon" href="../public/ww-logo.png" />
@@ -16,6 +16,7 @@ export default function Home() {
                 />
             </div>
             <h1 className="text-2xl font-light py-2">Vaishnavi Dwivedi</h1>
+            <br></br>
             <p>Full Stack Developer | Data Engineer | Designer</p>
         </div>
     );
