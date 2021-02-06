@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
-import '../styles/tailwind.scss';
+import '../styles/globals.css';
+import '../styles/tailwind.css';
 import Nav from '../src/components/nav';
 import Foot from '../src/components/foot';
 
