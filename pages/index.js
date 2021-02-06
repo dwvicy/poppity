@@ -8,7 +8,7 @@ export default function Home() {
                 <link rel="icon" href="../public/ww-logo.png" />
             </Head>
 
-            <div className="flex flex-wrap w-10/12 sm:w-4/12 px-4 justify-center">
+            <div className="container m-auto w-10/12 sm:w-4/12 px-4 justify-center">
                 <img
                     src="https://i.imgur.com/NMVIzOW.png"
                     alt="..."
