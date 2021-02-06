@@ -71,11 +71,6 @@ module.exports = {
     variants: {
         opacity: ['responsive', 'hover', 'focus', 'disabled'],
         cursor: ['responsive', 'hover', 'focus', 'disabled'],
-        flex: ['responsive'],
-        flexDirection: ['responsive'],
-        flexGrow: ['responsive'],
-        flexShrink: ['responsive'],
-        flexWrap: ['responsive'],
         backgroundColor: ['responsive', 'hover', 'focus', 'active', 'group-hover', 'odd', 'even']
     },
     // eslint-disable-next-line global-require
