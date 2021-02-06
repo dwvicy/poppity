@@ -8,10 +8,19 @@ const purgecss = {
 };
 
 module.exports = {
-    plugins: {
-        tailwindcss: {},
-        autoprefixer: {},
-        // Purge and minify CSS only production builds only
+    plugins: [
+        'tailwindcss',
+        'postcss-flexbugs-fixes',
+        [
+            'postcss-preset-env',
+            {
+                autoprefixer: {},
+                stage: 3,
+                features: {
+                    'custom-properties': false
+                }
+            }
+        ],
         ...(process.env.NODE_ENV === 'production' ? { ...purgecss, cssnano: {} } : {})
-    }
+    ]
 };
