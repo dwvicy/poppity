@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 const links = [
-    { href: '/about', label: 'about' },
+    { href: '/skills', label: 'skills' },
     { href: '/projects', label: 'projects' },
     { href: '/talks', label: 'talks' },
     { href: '/work', label: 'work' }
@@ -19,9 +19,9 @@ export default function Nav() {
                     </Link>
                 </li>
                 <div className="text-black border border-black shadow-lg">
-                    <ul className="px-4 py-2 flex items-center justify-between space-x-4">
+                    <ul className="px-4 py-2 flex flex-col items-center justify-between md:space-x-4 md:flex-row">
                         {links.map(({ href, label }) => (
-                            <li key={`${href}${label}`}>
+                            <li className="text-center" key={`${href}${label}`}>
                                 <Link href={href}>{label}</Link>
                             </li>
                         ))}
