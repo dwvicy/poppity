@@ -6,9 +6,11 @@ import Foot from '../src/components/foot';
 
 function MyApp({ Component, pageProps }) {
     return (
-        <div>
+        <div className="flex flex-col h-screen">
             <Nav />
-            <Component {...pageProps} />
+            <main className="flex-1 overflow-y-auto p-5">
+                <Component {...pageProps} />
+            </main>
             <Foot />
         </div>
     );
