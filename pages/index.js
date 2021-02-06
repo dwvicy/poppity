@@ -3,7 +3,9 @@ import Foto from '../src/components/foto';
 
 export default function Home() {
     return (
-        <div className="flex flex-col min-h-screen items-center">
+        <div
+            style={{ flexBasis: 0, flexGrow: 4 }}
+            className="flex flex-col min-h-screen items-center">
             <Head>
                 <title>dwvicy</title>
                 <link rel="icon" href="../public/ww-logo.png" />
