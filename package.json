@@ -7,6 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint --fix .",
+    "build:css": "postcss styles/tailwind.css -o styles/main.css",
+    "build:watch": "postcss styles/tailwind.css -o styles/main.css --watch",
+    "prod:build": "NODE_ENV=production npm run build:css && npm run build",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
   },
   "dependencies": {
@@ -15,8 +18,8 @@
     "autoprefixer": "^10.2.4",
     "cssnano": "^4.1.10",
     "next": "10.0.6",
-    "postcss": "^8.2.4",
     "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-load-config": "^3.0.0",
     "postcss-nesting": "^7.0.1",
     "postcss-preset-env": "^6.7.0",
     "react": "17.0.1",
@@ -35,6 +38,8 @@
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "husky": "^4.3.8",
     "lint-staged": "^10.5.3",
+    "postcss": "^8.2.4",
+    "postcss-cli": "^8.3.1",
     "prettier": "^2.2.1",
     "undefined": " "
   },
