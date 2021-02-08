@@ -3,7 +3,7 @@ html {
 }
 
 .underline--magical {
-    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    background-image: linear-gradient(120deg, #ddd6fe 30%, #a78bfa 70%);
     background-repeat: no-repeat;
     background-size: 100% 0.2em;
     background-position: 0 88%;
