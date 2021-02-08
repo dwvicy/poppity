@@ -11,7 +11,7 @@ export default function ProjectCard({ title, subtitle, label, img }) {
                 </div>
                 <div className="px-6 py-4">
                     <span className="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">
-                        #{label}
+                        {label}
                     </span>
                 </div>
             </div>
