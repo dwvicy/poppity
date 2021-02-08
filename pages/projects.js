@@ -4,18 +4,38 @@ import ProjectCard from '../src/components/project-card';
 export default function Projects() {
     return (
         <div>
-            <h1>Projects</h1>
-            <div className="">
+            <div className="w-28">
+                <h1 className="font-black text-2xl underline--magical">Projects</h1>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:space-x-4">
                 <ProjectCard
                     img="https://i.imgur.com/4IHOCRG.png"
-                    title="Niyamo"
-                    subtitle="An app to overcome imposter syndrome"
+                    title="niyamo"
+                    subtitle="an app to overcome imposter syndrome"
                     label="flutter"
                 />
                 <ProjectCard
                     img="https://i.imgur.com/4IHOCRG.png"
-                    title="CognitionAD"
-                    subtitle="An app for early detection of Alzheimer's disease"
+                    title="cognitionAD"
+                    subtitle="an app for early detection of Alzheimer's disease"
+                    label="flutter"
+                />
+                <ProjectCard
+                    img="https://i.imgur.com/4IHOCRG.png"
+                    title="aereor"
+                    subtitle="an app for early detection of Alzheimer's disease"
+                    label="flutter"
+                />
+                <ProjectCard
+                    img="https://i.imgur.com/4IHOCRG.png"
+                    title="michi"
+                    subtitle="an app for early detection of Alzheimer's disease"
+                    label="flutter"
+                />
+                <ProjectCard
+                    img="https://i.imgur.com/4IHOCRG.png"
+                    title="michi"
+                    subtitle="an app for early detection of Alzheimer's disease"
                     label="flutter"
                 />
             </div>

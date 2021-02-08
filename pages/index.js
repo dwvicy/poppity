@@ -5,7 +5,7 @@ export default function Home() {
         <div>
             <Head>
                 <title>dwvicy</title>
-                <link rel="icon" href="../public/ww-logo.png" />
+                <link rel="icon" href="https://i.imgur.com/JdQEZPs.png" />
             </Head>
 
             <div className="container m-auto w-10/2 sm:w-4/12 px-4 justify-center">
