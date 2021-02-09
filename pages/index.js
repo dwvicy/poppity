@@ -5,14 +5,35 @@ export default function Home() {
         <div>
             <Head>
                 <title>Vaishnavi Dwivedi</title>
-                <link rel="icon" href="https://i.imgur.com/JdQEZPs.png" />
+                <meta name="title" content="Vaishnavi Dwivedi" />
+                <meta
+                    name="description"
+                    content="Full Stack Developer | Data Engineer | Designer"
+                />
+
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://dwvicy.ml" />
                 <meta property="og:title" content="Vaishnavi Dwivedi" />
                 <meta
                     property="og:description"
                     content="Full Stack Developer | Data Engineer | Designer"
                 />
-                <meta property="og:image" content="https://i.imgur.com/NMVIzOW.png" />
-                <meta property="og:url" content="https://dwvicy.ml" />
+                <meta
+                    property="og:image"
+                    content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
+                />
+
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:url" content="https://metatags.io/" />
+                <meta property="twitter:title" content="Vaishnavi Dwivedi" />
+                <meta
+                    property="twitter:description"
+                    content="Full Stack Developer | Data Engineer | Designer"
+                />
+                <meta
+                    property="twitter:image"
+                    content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
+                />
             </Head>
 
             <div className="container m-auto w-10/2 sm:w-4/12 px-4 justify-center">
