@@ -4,8 +4,15 @@ export default function Home() {
     return (
         <div>
             <Head>
-                <title>dwvicy</title>
+                <title>Vaishnavi Dwivedi</title>
                 <link rel="icon" href="https://i.imgur.com/JdQEZPs.png" />
+                <meta property="og:title" content="Vaishnavi Dwivedi" />
+                <meta
+                    property="og:description"
+                    content="Full Stack Developer | Data Engineer | Designer"
+                />
+                <meta property="og:image" content="https://i.imgur.com/AeqIkvA.png" />
+                <meta property="og:url" content="https://dwvicy.ml" />
             </Head>
 
             <div className="container m-auto w-10/2 sm:w-4/12 px-4 justify-center">

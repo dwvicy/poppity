@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectCard from './project-card';
+// import ProjectCard from './project-card';
 
 const Tabs = ({ color }) => {
     const [openTab, setOpenTab] = React.useState(1);
@@ -11,7 +11,7 @@ const Tabs = ({ color }) => {
                         <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
                             <a
                                 className={
-                                    'text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal ' +
+                                    'text-xl   px-5 py-3 shadow-lg rounded block leading-normal ' +
                                     (openTab === 1
                                         ? 'text-white bg-' + color + '-600'
                                         : 'text-' + color + '-600 bg-white')
@@ -29,7 +29,7 @@ const Tabs = ({ color }) => {
                         <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
                             <a
                                 className={
-                                    'text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal ' +
+                                    'text-xl   px-5 py-3 shadow-lg rounded block leading-normal ' +
                                     (openTab === 2
                                         ? 'text-white bg-' + color + '-600'
                                         : 'text-' + color + '-600 bg-white')
@@ -47,7 +47,7 @@ const Tabs = ({ color }) => {
                         <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
                             <a
                                 className={
-                                    'text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal ' +
+                                    'text-xl   px-5 py-3 shadow-lg rounded block leading-normal ' +
                                     (openTab === 3
                                         ? 'text-white bg-' + color + '-600'
                                         : 'text-' + color + '-600 bg-white')
@@ -63,17 +63,12 @@ const Tabs = ({ color }) => {
                             </a>
                         </li>
                     </ul>
-                    <div className="relative flex flex-col min-w-0 break-words bg-pink-200 w-full mb-6 shadow-lg rounded">
+                    <div className="relative flex flex-col min-w-0 break-words bg-purple-200 w-full mb-6 shadow-lg rounded">
                         <div className="px-4 py-5 flex-auto">
                             <div className="tab-content tab-space ">
-                                <div className={openTab === 1 ? 'block' : 'hidden'} id="link1">
-                                    <ProjectCard
-                                        img="https://i.imgur.com/4IHOCRG.png"
-                                        title="michi"
-                                        subtitle="an app for early detection of Alzheimer's disease"
-                                        label="flutter"
-                                    />
-                                </div>
+                                <div
+                                    className={openTab === 1 ? 'block' : 'hidden'}
+                                    id="link1"></div>
                                 <div className={openTab === 2 ? 'block' : 'hidden'} id="link2">
                                     <p>
                                         Completely synergize resource taxing relationships via
@@ -107,7 +102,7 @@ const Tabs = ({ color }) => {
 export default function TabsRender() {
     return (
         <>
-            <Tabs color="pink" />
+            <Tabs color="purple" />
         </>
     );
 }
