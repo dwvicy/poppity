@@ -24,7 +24,7 @@ export default function Home() {
                 />
 
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:url" content="https://metatags.io/" />
+                <meta property="twitter:url" content="https://dwvicy.ml" />
                 <meta property="twitter:title" content="Vaishnavi Dwivedi" />
                 <meta
                     property="twitter:description"
