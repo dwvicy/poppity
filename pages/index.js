@@ -11,7 +11,7 @@ export default function Home() {
                     property="og:description"
                     content="Full Stack Developer | Data Engineer | Designer"
                 />
-                <meta property="og:image" content="https://i.imgur.com/AeqIkvA.png" />
+                <meta property="og:image" content="https://i.imgur.com/NMVIzOW.png" />
                 <meta property="og:url" content="https://dwvicy.ml" />
             </Head>
 
