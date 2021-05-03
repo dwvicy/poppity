@@ -3,9 +3,7 @@ import Link from 'next/link';
 const links = [
     { href: '/skills', label: 'skills' },
     { href: '/projects', label: 'projects' },
-    { href: '/talks', label: 'talks' },
-    { href: '/work', label: 'work' },
-    { href: '/exp', label: 'exp' }
+    { href: '/talks', label: 'talks' }
 ];
 
 export default function Nav() {

@@ -2,7 +2,7 @@ import React from 'react';
 import ProjectCard from '../src/components/project-card';
 import { projects } from '../src/data/project-data';
 
-export default function Projects() {
+export default function Talks() {
     return (
         <div>
             <div className="w-56">
