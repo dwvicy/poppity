@@ -8,7 +8,7 @@ export default function Home() {
                 <meta name="title" content="Vaishnavi Dwivedi" />
                 <meta
                     name="description"
-                    content="Full Stack Developer | Data Engineer | Designer"
+                    content="Product Strategy and Design | Full Stack Developer | Deep Learning"
                 />
 
                 <meta property="og:type" content="website" />
@@ -16,7 +16,7 @@ export default function Home() {
                 <meta property="og:title" content="Vaishnavi Dwivedi" />
                 <meta
                     property="og:description"
-                    content="Product Analyst | Full Stack Developer | Data Analyst | Designer"
+                    content="Product Strategy and Design | Full Stack Developer | Deep Learning"
                 />
                 <meta property="og:image" content="https://i.imgur.com/NMVIzOW.png" />
 
@@ -25,7 +25,7 @@ export default function Home() {
                 <meta property="twitter:title" content="Vaishnavi Dwivedi" />
                 <meta
                     property="twitter:description"
-                    content="Product Analyst | Full Stack Developer | Data Analyst | Designer"
+                    content="Product Strategy and Design | Full Stack Developer | Deep Learning"
                 />
                 <meta property="twitter:image" content="https://i.imgur.com/NMVIzOW.png" />
             </Head>
@@ -40,7 +40,7 @@ export default function Home() {
             <h1 className="text-center text-2xl font-light pt-3">Vaishnavi Dwivedi</h1>
             <br></br>
             <p className="text-center pb-10">
-                Product Analyst | Full Stack Developer | Data Analyst | Designer
+                Product Strategy and Design | Full Stack Developer | Deep Learning
             </p>
         </div>
     );
