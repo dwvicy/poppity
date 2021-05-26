@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 const links = [
-    { href: '/', label: 'home' },
+    { href: 'https://linktr.ee/dwvicy', label: 'socials' },
     { href: '/skills', label: 'skills' },
     { href: '/projects', label: 'projects' },
     { href: '/talks', label: 'talks' }
