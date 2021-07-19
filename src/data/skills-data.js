@@ -15,14 +15,14 @@ const skills = [
         logo: 'https://i.imgur.com/gnK58k4.png'
     },
     {
+        name: 'React',
+        percent: 93,
+        logo: 'https://i.imgur.com/clwEy83.png '
+    },
+    {
         name: 'Keras',
         percent: 97,
         logo: 'https://i.imgur.com/lXJTXTM.png'
-    },
-    {
-        name: 'TypeScript',
-        percent: 80,
-        logo: 'https://i.imgur.com/FyjNoMz.png '
     },
     {
         name: 'GraphQL',
@@ -30,30 +30,16 @@ const skills = [
         logo: 'https://i.imgur.com/K9QhQo1.png'
     },
     {
-        name: 'Flask',
-        percent: 72,
-        logo: 'https://i.imgur.com/Yz8c2ER.png '
-    },
-    {
-        name: 'Cloud',
-        percent: 78,
-        logo: 'https://i.imgur.com/Fqac4vx.png'
-    },
-    {
-        name: 'React',
-        percent: 93,
-        logo: 'https://i.imgur.com/clwEy83.png '
-    },
-    {
-        name: 'TensorFlow',
-        percent: 97,
-        logo: 'https://i.imgur.com/qek0Wu5.png '
-    },
-    {
         name: 'PyTorch',
         percent: 95,
         logo: 'https://i.imgur.com/jITS8FU.png'
     },
+    {
+        name: 'TypeScript',
+        percent: 80,
+        logo: 'https://i.imgur.com/FyjNoMz.png '
+    },
+
     {
         name: 'Node',
         percent: 89,
@@ -65,9 +51,25 @@ const skills = [
         logo: 'https://i.imgur.com/OH4Wg9Z.png '
     },
     {
-        name: 'C++',
+        name: 'Next.js',
         percent: 98,
-        logo: 'https://i.imgur.com/hxFBYXK.png'
+        logo: 'https://i.imgur.com/XMBoUIo.png'
+    },
+
+    {
+        name: 'SkLearn',
+        percent: 72,
+        logo: 'https://i.imgur.com/OEpL2Kn.png'
+    },
+    {
+        name: 'TailwindCSS',
+        percent: 78,
+        logo: 'https://i.imgur.com/Gw0871P.png'
+    },
+    {
+        name: 'TensorFlow',
+        percent: 97,
+        logo: 'https://i.imgur.com/qek0Wu5.png '
     }
 ];
 

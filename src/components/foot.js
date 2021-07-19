@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Foot() {
     return (
-        <footer className="flex w-full text-center border-t border-grey p-4 justify-center">
+        <footer className="flex flex-row w-full text-center border-t border-grey p-4 justify-center">
             <div className=" h-6 w-6">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
