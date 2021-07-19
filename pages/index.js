@@ -52,12 +52,14 @@ export default function Home() {
                         {socials.map(({ link, logo }) => (
                             <div key={`${link}${logo}`}>
                                 <div className="inline-flex flex-row">
-                                    <img
-                                        className="h-10 w-auto sm:h-12  px-1"
-                                        src={logo}
-                                        href={link}
-                                        alt=""
-                                    />
+                                    <a href={link} target="_blank" rel="noreferrer">
+                                        <img
+                                            className="h-10 w-auto sm:h-12  px-1"
+                                            href={link}
+                                            src={logo}
+                                            alt=""
+                                        />
+                                    </a>
                                 </div>
                             </div>
                         ))}

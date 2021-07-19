@@ -1,6 +1,6 @@
 import React from 'react';
 import TalkCard from '../src/components/talk-card';
-import { talks } from '../src/data/talks-data';
+import talks from '../src/data/talks-data';
 
 export default function Talks() {
     return (

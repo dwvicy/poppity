@@ -1,11 +1,13 @@
 import React from 'react';
 import skills from '../data/skills-data';
 import tools from '../data/proficient';
+// import recenttalks from '../data/recent-talk';
+// import RecentTalkCard from './recent-card';
 export default function Landing() {
     return (
         <div>
             <div className="flex flex-col sm:flex-row justify-between">
-                <div className=" container w-11/12 sm:w-2/3 flex flex-col justify-start p-2 sm:p-10">
+                <div className="container w-11/12 sm:w-2/3 flex flex-col justify-start p-2 sm:p-10">
                     <h1 className="font-bold text-lg">Summary</h1>
                     <p>
                         I&apos;m a versatile person with a lot of experience in the tech community
@@ -41,6 +43,55 @@ export default function Landing() {
                             </div>
                         ))}
                     </div>
+                </div>
+            </div>
+            {/* <div className=" w-11/12 sm:w-full flex flex-col justify-start p-2 sm:p-10">
+                <h1 className="font-bold text-lg">Upcoming Workshops</h1>
+                <div className="flex flex-wrap -mx-1 overflow-hidden sm:-mx-1 md:-mx-1 lg:-mx-1 xl:-mx-1">
+                    {recenttalks.map(({ img, title, subtitle, label, link, date }) => (
+                        <div
+                            className="my-1 px-1 w-full overflow-hidden sm:my-1 sm:px-1 sm:w-1/2 md:my-1 md:px-1 md:w-full lg:my-1 lg:px-1 lg:w-1/4 xl:my-1 xl:px-1 xl:w-1/4"
+                            key={`${img}${title}${subtitle}${label}${link}${date}`}>
+                            <RecentTalkCard
+                                img={img}
+                                title={title}
+                                subtitle={subtitle}
+                                label={label}
+                                link={link}
+                                date={date}
+                            />
+                        </div>
+                    ))}
+                </div> */}
+            {/* </div> */}
+            <div>
+                <h1 className="font-bold text-lg">Recent Videos</h1>
+                <div className="flex flex-row justify-start space-x-5">
+                    <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube-nocookie.com/embed/qyQmGLOV7Eg"
+                        title="YouTube video player"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen></iframe>
+
+                    <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube-nocookie.com/embed/KB0gJ9G_Q-I?start=44"
+                        title="YouTube video player"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen></iframe>
+                    <iframe
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/VPZ00MEc5gY?start=184"
+                        title="YouTube video player"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen></iframe>
                 </div>
             </div>
         </div>

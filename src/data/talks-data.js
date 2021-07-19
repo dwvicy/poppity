@@ -1,4 +1,4 @@
-export const talks = [
+const talks = [
     {
         title: 'explore ml workshop',
         subtitle:
@@ -112,3 +112,5 @@ export const talks = [
         link: 'https://youtu.be/YA4EOPmUN6g?t=28'
     }
 ];
+
+export default talks;
