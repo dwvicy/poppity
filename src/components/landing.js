@@ -24,7 +24,7 @@ export default function Landing() {
                         {tools.map(({ logo }) => (
                             <div key={`${logo}`}>
                                 <div className="inline-flex flex-row">
-                                    <img className="h-10 w-auto sm:h-12  px-1" src={logo} alt="" />
+                                    <img className="h-6 w-auto sm:h-12  px-1" src={logo} alt="" />
                                 </div>
                             </div>
                         ))}
@@ -66,9 +66,9 @@ export default function Landing() {
             {/* </div> */}
             <div>
                 <h1 className="font-bold text-lg">Recent Videos</h1>
-                <div className="flex flex-row justify-start space-x-5">
+                <div className="flex flex-col sm:flex-row justify-start space-y-3 sm:space-x-5">
                     <iframe
-                        width="560"
+                        width="500"
                         height="315"
                         src="https://www.youtube-nocookie.com/embed/qyQmGLOV7Eg"
                         title="YouTube video player"
@@ -77,7 +77,7 @@ export default function Landing() {
                         allowFullScreen></iframe>
 
                     <iframe
-                        width="560"
+                        width="500"
                         height="315"
                         src="https://www.youtube-nocookie.com/embed/KB0gJ9G_Q-I?start=44"
                         title="YouTube video player"
@@ -85,7 +85,7 @@ export default function Landing() {
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen></iframe>
                     <iframe
-                        width="560"
+                        width="500"
                         height="315"
                         src="https://www.youtube.com/embed/VPZ00MEc5gY?start=184"
                         title="YouTube video player"

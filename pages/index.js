@@ -54,7 +54,7 @@ export default function Home() {
                                 <div className="inline-flex flex-row">
                                     <a href={link} target="_blank" rel="noreferrer">
                                         <img
-                                            className="h-10 w-auto sm:h-12  px-1"
+                                            className="h-7 w-auto sm:h-12  px-1"
                                             href={link}
                                             src={logo}
                                             alt=""
