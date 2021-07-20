@@ -16,7 +16,7 @@ const socials = [
         logo: 'https://i.imgur.com/EEo2g39.png'
     },
     {
-        link: 'https://www.anchor.com/bottle',
+        link: 'https://anchor.com/bottle',
         logo: 'https://i.imgur.com/CZiMIA0.png'
     },
     {
