@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Foot from '../src/components/foot';
 import Landing from '../src/components/landing';
 import socials from '../src/data/socials';
+import Image from 'next/image';
 
 export default function Home() {
     return (
@@ -34,9 +35,12 @@ export default function Home() {
             </Head>
             <div className="flex flex-col sm:flex-row justify-center">
                 <div className="m-auto sm:m-7 w-7/12 sm:w-1/4 md:w-1/4 justify-center">
-                    <img
+                    <Image
                         src="https://i.imgur.com/NMVIzOW.png"
                         alt="..."
+                        width="100%"
+                        height="100%"
+                        layout="responsive"
                         className="shadow-lg rounded-full border-none"
                     />
                 </div>
@@ -48,17 +52,22 @@ export default function Home() {
                     <p className="text-center sm:text-left pb-5 sm:pb-10 text-sm sm:text-base">
                         Product Strategy | Frontend Developer | Machine Learning
                     </p>
-                    <div className="flex flex-row justify-center sm:justify-start">
+                    <div className="flex flex-row space-x-1 justify-center sm:justify-start w-9/12 sm:w-full m-auto sm:m-0">
                         {socials.map(({ link, logo }) => (
                             <div key={`${link}${logo}`}>
                                 <div className="inline-flex flex-row">
                                     <a href={link} target="_blank" rel="noreferrer">
-                                        <img
-                                            className="h-7 w-auto sm:h-12  px-1"
-                                            href={link}
-                                            src={logo}
-                                            alt=""
-                                        />
+                                        <div>
+                                            <Image
+                                                className=" px-1"
+                                                href={link}
+                                                src={logo}
+                                                alt=""
+                                                height="50%"
+                                                width="50%"
+                                                // layout="responsive"
+                                            />
+                                        </div>
                                     </a>
                                 </div>
                             </div>
@@ -66,8 +75,14 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center my-10 sm:my-28">
-                <img src="/down-arrow.png" alt="" className="w-auto h-8 animate-bounce" />
+            <div className="flex justify-center my-10 sm:my-28 w-auto h-8 animate-bounce">
+                <Image
+                    src="/down-arrow.png"
+                    alt=""
+                    className=""
+                    layout="fill"
+                    objectFit="contain"
+                />
             </div>
 
             <section className="my-12">

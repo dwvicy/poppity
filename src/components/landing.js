@@ -1,6 +1,8 @@
 import React from 'react';
 import skills from '../data/skills-data';
 import tools from '../data/proficient';
+import Image from 'next/image';
+
 // import recenttalks from '../data/recent-talk';
 // import RecentTalkCard from './recent-card';
 export default function Landing() {
@@ -20,11 +22,17 @@ export default function Landing() {
                     </p>
                     &nbsp;
                     <h1 className="font-bold text-lg">Tools</h1>
-                    <div className="flex flex-row">
+                    <div className="flex flex-row space-x-1">
                         {tools.map(({ logo }) => (
                             <div key={`${logo}`}>
-                                <div className="inline-flex flex-row">
-                                    <img className="h-6 w-auto sm:h-12  px-1" src={logo} alt="" />
+                                <div className="inline-flex flex-row ">
+                                    <Image
+                                        className="h-6 w-auto sm:h-12 px-1"
+                                        src={logo}
+                                        alt=""
+                                        width="50%"
+                                        height="50%"
+                                    />
                                 </div>
                             </div>
                         ))}
@@ -33,11 +41,18 @@ export default function Landing() {
                 <div className="p-8 sm:p-10">
                     {' '}
                     <h1 className="font-bold text-lg">Tech I&apos;ve worked with</h1>
-                    <div className="my-5 grid mx-5 sm:mx-5 grid-col-2 grid-rows-5 sm:grid-flow-col sm:grid-cols-2 sm:grid-rows-7  gap-5">
+                    <div className="my-5 grid mx-5 sm:mx-5 grid-col-2 grid-rows-5 sm:grid-flow-col sm:grid-cols-2 sm:grid-rows-7  gap-5 ">
                         {skills.map(({ logo, name }) => (
                             <div key={`${logo}${name}`}>
-                                <div className="inline-flex flex-row">
-                                    <img className="h-4 w-auto sm:h-6  px-1" src={logo} alt="" />
+                                <div className="inline-flex flex-row space-x-1">
+                                    <Image
+                                        className="  px-1"
+                                        src={logo}
+                                        alt=""
+                                        width="25%"
+                                        height="19%"
+                                        layout=""
+                                    />
                                     <p>{name}</p>
                                 </div>
                             </div>
@@ -65,12 +80,12 @@ export default function Landing() {
                 </div> */}
             {/* </div> */}
             <div>
-                <h1 className="font-bold text-lg">Recent Videos</h1>
+                <h1 className="font-bold text-lg">Informative Videos</h1>
                 <div className="flex flex-col sm:flex-row justify-start space-y-3 sm:space-x-5">
                     <iframe
-                        width="500"
+                        width="560"
                         height="315"
-                        src="https://www.youtube-nocookie.com/embed/qyQmGLOV7Eg"
+                        src="https://www.youtube.com/embed/fqhLNTkzPJI?start=404"
                         title="YouTube video player"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

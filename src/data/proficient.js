@@ -18,7 +18,7 @@ const tools = [
         logo: 'https://i.imgur.com/iTXeEji.png'
     },
     {
-        logo: 'https://i.imgur.com/tXAuMip.png'
+        logo: 'https://i.imgur.com/9rNKqqE.png'
     }
 ];
 
