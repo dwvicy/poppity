@@ -34,25 +34,25 @@ export default function Home() {
                 <meta property="twitter:image" content="https://i.imgur.com/NMVIzOW.png" />
             </Head>
             <div className="flex flex-col sm:flex-row justify-center">
-                <div className="m-auto sm:m-7 w-7/12 sm:w-1/4 md:w-1/4 justify-center">
+                <div className="m-auto sm:m-10 w-7/12 sm:w-1/4 md:w-1/4 justify-center">
                     <Image
                         src="https://i.imgur.com/NMVIzOW.png"
                         alt="..."
                         width="100%"
                         height="100%"
                         layout="responsive"
-                        className="shadow-lg rounded-full border-none"
+                        className="rounded-full border-none"
                     />
                 </div>
                 <div className="flex flex-col justify-center m-1 sm:m-7">
-                    <h1 className="text-center font-semibold sm:text-left text-xl sm:text-3xl font-light pt-3">
+                    <h1 className="text-center font-semibold sm:text-left text-xl sm:text-7xl font-light pt-3">
                         Vaishnavi Dwivedi
                     </h1>
                     <br></br>
-                    <p className="text-center sm:text-left pb-5 sm:pb-10 text-sm sm:text-base">
+                    <p className="text-center sm:text-left pb-5 sm:pb-10 text-sm sm:text-xl">
                         Product Strategy | Frontend Developer | Machine Learning
                     </p>
-                    <div className="flex flex-row space-x-1 justify-center sm:justify-start w-9/12 sm:w-full m-auto sm:m-0">
+                    <div className="flex flex-row space-x-3 justify-center sm:justify-start w-9/12 sm:w-full m-auto sm:m-0">
                         {socials.map(({ link, logo }) => (
                             <div key={`${link}${logo}`}>
                                 <div className="inline-flex flex-row">
@@ -63,8 +63,8 @@ export default function Home() {
                                                 href={link}
                                                 src={logo}
                                                 alt=""
-                                                height="50%"
-                                                width="50%"
+                                                height="40%"
+                                                width="40%"
                                                 // layout="responsive"
                                             />
                                         </div>
@@ -75,7 +75,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center my-10 sm:my-28 w-auto h-8 animate-bounce">
+            <div className="flex justify-center my-10 sm:my-20 w-auto h-8 animate-bounce">
                 <Image
                     src="/down-arrow.png"
                     alt=""
@@ -85,7 +85,7 @@ export default function Home() {
                 />
             </div>
 
-            <section className="my-12">
+            <section className="my-10">
                 <Landing />
             </section>
             <Foot />

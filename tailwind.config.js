@@ -1,5 +1,3 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
-
 module.exports = {
     purge: ['./src/**/*.js'],
     theme: {
@@ -8,9 +6,6 @@ module.exports = {
         },
         // good to know: add default line height https://tailwindcss.com/docs/font-size#app
         extend: {
-            fontFamily: {
-                sans: ['Poppins', ...defaultTheme.fontFamily.sans]
-            },
             colors: {
                 // custom light-gray tones
                 geist: {
