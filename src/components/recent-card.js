@@ -1,11 +1,10 @@
 import React from 'react';
 
-export default function RecentTalkCard({ title, subtitle, label, img, link, date }) {
+export default function RecentTalkCard({ title, subtitle, label, link, date }) {
     return (
         <div>
             <a href={link} target="_blank" rel="noreferrer">
                 <div className="max-w-xs rounded overflow-hidden shadow-lg my-2">
-                    <img className="w-full" src={img} alt=" " />
                     <div className="px-6 py-4">
                         <div className="font-bold text-xl mb-2">{title}</div>
                         <p className="text-grey-darker text-base">{subtitle}</p>
