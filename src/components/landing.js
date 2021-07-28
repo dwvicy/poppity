@@ -12,7 +12,7 @@ export default function Landing() {
                     <h1 className="font-bold text-lg">Summary</h1>
                     <p>
                         I&apos;m a versatile person with a lot of experience in the tech community
-                        and working at several startups. I&apos;ve hosted 30+ workshops in the past
+                        and working at many startups. I&apos;ve hosted 30+ workshops in the past
                         year on a variety of topics ranging from machine learning to UI/UX. I like
                         designing & building products that positively impact the lives of users. I
                         don&apos;t associate myself with specific tools and technology. They are
